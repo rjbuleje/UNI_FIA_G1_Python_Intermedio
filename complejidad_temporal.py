@@ -1,7 +1,8 @@
+
 import time
 import sys
-
 sys.setrecursionlimit(100000)
+
 
 def factorial_r(n):
     if n == 0 or n == 1:
@@ -16,15 +17,18 @@ def factorial_for(n):
         acumulador *= i
     return acumulador
 
-
-
-
-if __name__ == "__main__":
+def run():
     beginning = time.time()
     factorial_r(10000)
     step_1 = time.time()
-    factorial_for(10000)
+    factorial_for(1000)
     step_2 = time.time()
-    print(step_1 - beginning)
-    print(step_2 - step_1)
+    point_1 = step_1 - beginning
+    print(point_1)
 
+
+if __name__ == "__main__":
+
+    run()
+    
+    
