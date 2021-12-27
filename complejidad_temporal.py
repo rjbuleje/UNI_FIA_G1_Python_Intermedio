@@ -1,7 +1,7 @@
 
 import time
 import sys
-sys.setrecursionlimit(100000)
+sys.setrecursionlimit(10000000)
 
 
 def factorial_r(n):
